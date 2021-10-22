@@ -30,7 +30,7 @@ export default function MostPicked(props) {
                     <h5>{item.name}</h5>
                   </Button>
                   <span>
-                    {item.citiy}, {item.country}
+                    {item.city}, {item.country}
                   </span>
                 </div>
               </div>
