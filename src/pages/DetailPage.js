@@ -5,6 +5,8 @@ import ItemDetails from "json/itemDetails.json";
 import FeaturedImage from "parts/FeaturedImage";
 import PageDetailDescription from "parts/PageDetailDescription";
 import BookingForm from "parts/BookingForm";
+import Categories from "parts/Categories";
+import Testimoni from "parts/Testimoni";
 
 export default class DetailPage extends Component {
   componentDidMount() {
@@ -32,6 +34,8 @@ export default class DetailPage extends Component {
             </div>
           </div>
         </section>
+        <Categories data={ItemDetails.categories}/>
+        <Testimoni data={ItemDetails.testimonial} />
       </>
     );
   }
