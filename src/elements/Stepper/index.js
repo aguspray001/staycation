@@ -3,9 +3,9 @@ import propTypes from "prop-types";
 export default function Stepper(props) {
   const { steps, initialStep } = this.props;
   const stepsKeys = Object.keys(steps);
-  const [CurrentStep, setCurrentStep] = useState(stepsKeys.indexOf(initialStep)>-1?initialStep:stepsKeys[0]);
+  const [CurrentStep, setCurrentStep] = React.useState(stepsKeys.indexOf(initialStep)>-1?initialStep:stepsKeys[0]);
   const totalStep = stepsKeys.length;
-  const indexStep = stepKeys.indexOf(CurrentStep);
+  const indexStep = stepsKeys.indexOf(CurrentStep);
 
   function prevStep(){
       if(+indexStep>0) setCurrentStep(stepsKeys[indexStep-1]);

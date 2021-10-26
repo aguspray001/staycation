@@ -1,7 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
+import propTypes from "prop-types";
 
-import "index.scss";
+import "./index.scss";
 
 function InputText(props) {
   const {
