@@ -14,7 +14,7 @@ function InputText(props) {
     outerClassName,
     inputClassName,
     errorResponse,
-  } = this.props;
+  } = props;
 
   const [HasError, setHasError] = React.useState(null);
   let pattern = "";

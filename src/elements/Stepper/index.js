@@ -1,7 +1,7 @@
 import React from "react";
 import propTypes from "prop-types";
 export default function Stepper(props) {
-  const { steps, initialStep } = this.props;
+  const { steps, initialStep } = props;
   const stepsKeys = Object.keys(steps);
   const [CurrentStep, setCurrentStep] = React.useState(stepsKeys.indexOf(initialStep)>-1?initialStep:stepsKeys[0]);
   const totalStep = stepsKeys.length;
