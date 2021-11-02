@@ -15,9 +15,11 @@ function Numbering({ style, className, data, current }) {
             isActive = "";
             return null;
           } else {
-            <li key={`list-${index}`} className={[isActive].join(" ")}>
-              {index + 1}
-            </li>;
+            return (
+              <li key={`list-${index}`} className={[isActive].join(" ")}>
+                {index + 1}
+              </li>
+            );
           }
         })}
       </ol>
